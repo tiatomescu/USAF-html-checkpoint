@@ -1,15 +1,20 @@
 body {
-  display: grid;
-  grid-template-rows: 1fr 12fr;
-  grid-template-columns: 1fr 2fr 1fr;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto 1fr;
 }
 
 .header {
-  grid-row: 1;
   grid-column: 1 / span 3;
+  grid-row: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
   background-color: #343a41;
   color: white;
   font-size: 20px;
@@ -20,7 +25,6 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-  grid-column: 1;
 }
 
 .header-buttons {
@@ -33,9 +37,8 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: stretch;
-  padding: 15px;
   gap: 10px;
-  grid-column: 2;
+  padding: 15px;
 }
 
 .header-form-button {
@@ -48,11 +51,12 @@ body {
 }
 
 .login {
-  grid-row: 2;
   grid-column: 2;
+  grid-row: 2;
   display: flex;
   align-items: stretch;
   flex-direction: column;
+  gap: 10px;
 }
 
 .section-header {
@@ -61,10 +65,92 @@ body {
 }
 
 .login-button {
+  display: flex;
+  align-items: flex-start;
   text-decoration: none;
   font-size: 18px;
+  background-color: #087cfc;
+  color: white;
   border-style: solid;
-  border-radius: 0.25em;
-  padding: 5px 10px;
+  border-radius: 0.4em;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  width: 5.5cqb;
 }
 
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px 10px;
+  margin: 50px;
+}
+
+.movie-poster {
+  max-width: 100%;
+  height: 32rem;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  border: solid lightgray;
+}
+
+.details-page {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 4fr 2fr;
+}
+
+.results-button {
+  grid-column: 1 / span 2;
+  display: flex;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: #6c757e;
+  color: orange;
+  border-radius: 0.2em;
+  padding: 10px 20px;
+  margin: 10px 0px;
+}
+
+.section-subheader {
+  font-size: 30px;
+}
+
+#hsm {
+  background-image: url(https://m.media-amazon.com/images/M/MV5BNzA2MmIxYWUtOGRiYi00ZTVkLWE4YTQtY2MyN2I5ZmRmOTBjXkEyXkFqcGc@._V1_.jpg);
+  background-size: cover;
+}
+
+#twenty {
+  background-image: url(https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p11676065_p_v8_ac.jpg);
+  background-size: cover;
+}
+
+#barbie {
+  background-image: url(https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p13472534_p_v8_am.jpg);
+  background-size: cover;
+}
+
+#interstellar {
+  background-image: url(https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10543523_p_v8_as.jpg);
+  background-size: cover;
+}
+
+#lalaland {
+  background-image: url(https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_FMjpg_UX1000_.jpg);
+  background-size: cover;
+}
+
+#wicked {
+  background-image: url(https://m.media-amazon.com/images/M/MV5BOWMwYjYzYmMtMWQ2Ni00NWUwLTg2MzAtYzkzMDBiZDIwOTMwXkEyXkFqcGc@._V1_.jpg);
+  background-size: cover;
+}
+
+#fourth-wing {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1701980900i/61431922.jpg);
+  background-size: cover;
+}
+
+#coraline {
+  background-image: url(https://images.fathomevents.com/image/upload/w_1200,dpr_2,f_auto,q_auto/v1686758421/Events/2023/1822/1000x1480%20FE%20Website%20Thumbnail.jpg.jpg);
+  background-size: cover;
+}
